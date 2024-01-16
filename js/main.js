@@ -80,15 +80,15 @@ function handleTouchMove(event) {
 const moveSnake = (event) => {
     if(event.keyCode === 37 && velocityY != 1 || event.keyCode === 65 && velocityY != 1) { // Left
         velocityX = 0;
-        velocityY = -0.1;
+        velocityY = -1;
     } else if(event.keyCode === 39 && velocityY != -1 || event.keyCode === 68 && velocityY != -1) { // Right
         velocityX = 0;
-        velocityY = +0.1;
+        velocityY = +1;
     } else if(event.keyCode === 38 && velocityX != 1 || event.keyCode === 87 && velocityX != 1) { // Up
-        velocityX = -0.1;
+        velocityX = -1;
         velocityY = 0;
     } else if(event.keyCode === 40 && velocityX != -1 || event.keyCode === 83 && velocityX != -1) { // Down
-        velocityX = +0.1;
+        velocityX = +1;
         velocityY = 0;
     }
     // console.log(event);
