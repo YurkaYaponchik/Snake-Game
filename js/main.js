@@ -137,5 +137,5 @@ const initGame = () => {
 }
 
 changeFoodPos();
-setIntervalId = setInterval(initGame, 500);
+setIntervalId = setInterval(initGame, 250);
 document.addEventListener('keydown', moveSnake);
